@@ -147,3 +147,23 @@ yourAge = 10
 yourAge = 20
 
 
+// named parameter
+func myFunction(name: String) -> String{
+    return "안녕하세요! \(name) 입니다~"
+}
+
+myFunction(name: "chloemk")
+
+// named parameter with different name
+func myFunction2(fakeName name: String) -> String {
+    return "안녕하세요 제 이름은 \(name) 입니다!!"
+}
+
+myFunction2(fakeName: "fakechloe")
+
+// call func without named parameter
+func myFunction3(_ name: String) -> String{
+    return "이름은 \(name) 입니다"
+}
+
+myFunction3("anotherChloe")

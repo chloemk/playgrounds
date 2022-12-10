@@ -131,3 +131,19 @@ if let otherVar = someVar {
 } else {
     print("값이 없음")
 }
+
+// property observer
+var yourAge = 0 {
+    willSet{
+        print("값이 설정될 예정 willSet -> \(yourAge)")
+    }
+    
+    didSet{
+        print("값이 설정된 후 didSet -> \(yourAge)")
+    }
+}
+
+yourAge = 10
+yourAge = 20
+
+
